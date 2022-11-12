@@ -31,8 +31,8 @@
 
 #### Handige links (API)
 
-Link naar hosted API: <a href="https://soccer-service-bjornvdd.cloud.okteto.net"></a>
-Link naar front-end Github repository:
-Link naar **hosted** front-end: 
+<p>Link naar hosted API: <a href="https://soccer-service-bjornvdd.cloud.okteto.net"></a></p>
+<p>Link naar front-end Github repository:</p>
+<p>Link naar **hosted** front-end:</p>
 
 <a href="#readme-back-top">Back to top</a>
