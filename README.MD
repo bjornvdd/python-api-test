@@ -6,16 +6,15 @@
 
 
 ## Over het thema:
- Ik heb een API gerealiseerd over het onderwerp Voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt.
-
-
-## Over de API:
-Mijn API doet 1 POST-request en 2 GET-requests.
+ Ik heb een API gerealiseerd over het onderwerp voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt.
 
 
 ## Over de front-end:
 
 Hier komt de uitleg van de front-end
+
+## Over de API:
+Mijn API doet 1 POST-request en 2 GET-requests.
 
 
 ### POST-request:
