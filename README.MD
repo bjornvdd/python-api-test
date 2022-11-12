@@ -1,7 +1,8 @@
 <a name="readme-back-top"></a>
 
 # Soccer API
-### Gemaakt door Bjorn Van den Dungen
+#### Gemaakt door Bjorn Van den Dungen
+#### r0889357
 
 
 ## Over het Project
@@ -16,3 +17,8 @@
 * Bij de 1ste GET-request kan je alle teams **opvragen**.
 * Bij de 2de GET-request kan je een specifieke speler opvragen en daarbij komende **informatie** verkrijgen.
 
+
+#### Postman Screenshots
+
+* POST-request
+<img src="C:\Users\bjorn\Desktop\School 2de jaar\API Webdevelopment\Post_Request.PNG" alt="POST">
