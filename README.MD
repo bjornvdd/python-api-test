@@ -21,4 +21,4 @@
 #### Postman Screenshots
 
 * POST-request
-<img src="C:\Users\bjorn\Desktop\School 2de jaar\API Webdevelopment\Post_Request.PNG">
+<img src="images/Post_Request.PNG" alt = "POST">
