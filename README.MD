@@ -20,5 +20,12 @@
 
 #### Postman Screenshots
 
-* POST-request
-<img src="images/Post_Request.PNG" alt = "POST" width="90%" height="90%">
+* POST-request:
+<img src="images/Post_Request.PNG" alt = "POST" width="100%" height="100%">
+
+* GET-request 1:
+<img src="images/1_Get_Request.PNG" alt = "GET1" width="100%" height="100%">
+
+* GET-request 2:
+<img src="images/2_Get_Request.PNG" alt = "GET2" width="100%" height="100%">
+
