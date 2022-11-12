@@ -5,20 +5,30 @@
 #### r0889357
 
 
-## Over het Project
- Ik heb een API gerealiseerd over het onderwerp Voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt. Mijn API doet 1 POST-request en 2 GET-requests.
+## Over het thema:
+ Ik heb een API gerealiseerd over het onderwerp Voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt.
 
-#### POST-request:
+
+## Over de API:
+Mijn API doet 1 POST-request en 2 GET-requests.
+
+
+## Over de front-end:
+
+Hier komt de uitleg van de front-end
+
+
+### POST-request:
 
  * Bij de POST-request heb je de kans om een speler **aan te maken** die jezelf wilt, de output krijg je dan in JSON formaat.
 
-#### GET-requests:
+### GET-requests:
 
 * Bij de 1ste GET-request kan je alle teams **opvragen**.
 * Bij de 2de GET-request kan je een specifieke speler opvragen en daarbij komende **informatie** verkrijgen.
 
 
-#### Postman Screenshots
+### Postman Screenshots
 
 * POST-request:
 <img src="images/Post_Request.PNG" alt = "POST" width="100%" height="100%">
@@ -29,10 +39,16 @@
 * GET-request 2:
 <img src="images/2_Get_Request.PNG" alt = "GET2" width="100%" height="100%">
 
-#### Handige links (API)
+### OpenAPI (docs)
 
-<p><a href="https://soccer-service-bjornvdd.cloud.okteto.net">Link naar hosted API:</a></p>
+<img src="images/OpenAPI_docs.PNG" alt = "docs" width="100%" height="100%">
+
+
+
+### Handige links (API)
+
+<p><a href="https://soccer-service-bjornvdd.cloud.okteto.net">Link naar hosted API</a></p>
 <p>Link naar front-end Github repository:</p>
-<p>Link naar **hosted** front-end:</p>
+<p>Link naar <strong>hosted</strong> front-end:</p>
 
 <a href="#readme-back-top">Back to top</a>
