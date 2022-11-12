@@ -1,6 +1,6 @@
 version: "3.9"
 services:
- randomizer-service:
+ soccer-service:
   image: bjornvdd/python-api-test
   ports:
     - "8000:8000"
