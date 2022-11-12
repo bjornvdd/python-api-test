@@ -5,18 +5,18 @@ app = FastAPI()
 
 
 class Player(BaseModel):
-    first_name: str
-    last_name: str
+    first_name: str | None = "Invalid"
+    last_name: str | None = "Invalid"
     email: str | None = None
-    number: int
+    number: int | None = "Invalid"
     birth_date: str | None = None
 
 
 class Team(BaseModel):
-    team_name: str
-    captain_team: str
-    played_games: int
-    ranking: int
+    team_name: str | None = "Invalid"
+    captain_team: str | None = None
+    played_games: int | None = "Invalid"
+    ranking: int | None = "Invalid"
 
 
 team_real_madrid = {
@@ -59,23 +59,22 @@ third_player = {
 
 }
 
-team = {0: team_real_madrid, 1: team_manchester_united}
-player = {1: first_player}
+team_list = [team_real_madrid, team_manchester_united]
 player_list = [first_player, second_player, third_player]
 
 
-@app.post("/player")
+@app.post("/player", response_model=Player)
 async def create_player(player: Player):
     return player
 
 
-@app.get("/team")
-async def get_team():
-    return team
+@app.get("/teams", response_model=list)
+async def get_teams():
+    return team_list
 
 
-@app.get("/player/{player_name}")
-async def get_player(player_name):
+@app.get("/player/{player_name}", response_model=Player)
+async def get_player(player_name: str):
     for player in player_list:
         if player.get("first_name") == player_name:
             return player
