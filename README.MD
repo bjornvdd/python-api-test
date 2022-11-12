@@ -29,3 +29,10 @@
 * GET-request 2:
 <img src="images/2_Get_Request.PNG" alt = "GET2" width="100%" height="100%">
 
+#### Handige links (API)
+
+Link naar hosted API: <a href="https://soccer-service-bjornvdd.cloud.okteto.net">
+Link naar front-end Github repository:
+Link naar **hosted** front-end: 
+
+<a href="#readme-back-top">Back to top</a>
