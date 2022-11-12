@@ -21,4 +21,4 @@
 #### Postman Screenshots
 
 * POST-request
-<img src="images/Post_Request.PNG" alt = "POST" width="80%" height="70%">
+<img src="images/Post_Request.PNG" alt = "POST" width="90%" height="90%">
