@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+#implementing security
 origins = [
     "http://localhost",
     "http://localhost:8080",
@@ -19,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
+#1ste basemodel voor player
 class Player(BaseModel):
     first_name: str | None = "Invalid"
     last_name: str | None = "Invalid"
@@ -27,7 +28,7 @@ class Player(BaseModel):
     number: int | None = "Invalid"
     birth_date: str | None = None
 
-
+#2de basemodel voor team
 class Team(BaseModel):
     team_name: str | None = "Invalid"
     captain_team: str | None = None
@@ -92,6 +93,6 @@ async def get_teams():
 @app.get("/player/{player_name}", response_model=Player)
 async def get_player(player_name: str):
     for player in player_list:
-        if player.get("first_name") == player_name:
+        if player.get("first_name") == player_name: #kijkt naar de firstname van de speler en geeft dan bijkomende informatie erbij
             return player
     return "Speler niet mogelijk"
