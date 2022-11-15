@@ -10,7 +10,7 @@
 
     <hr>
 
-    <h3>Get-request: teams</h3>
+    <h3>Get-request: Teams</h3>
     <div x-data="{
         responsedata: null,
         async getData() {
@@ -18,13 +18,16 @@
         }
     }">
         <button x-on:click="getData">Send get request</button>
-        Data returned: <strong x-text="responsedata[0].team_name">Placeholder</strong>
+        Team naam: <strong x-text="responsedata[0].team_name">Placeholder</strong>
+        Kapitein: <strong x-text="responsedata[0].captain_team">Placeholder</strong>
+        Gespeelde wedstrijden: <strong x-text="responsedata[0].played_games">Placeholder</strong>
+        Ranking: <strong x-text="responsedata[0].ranking">Placeholder</strong>
     </div>
     <br>
 
     <hr>
 
-    <h3>Get-request: player</h3>
+    <h3>Get-request: Speler</h3>
     <div x-data="{
         responsedata: null,
         async getData() {
@@ -32,7 +35,43 @@
         }
     }">
         <button x-on:click="getData">Send get request</button>
-        Data returned: <strong x-text="responsedata[0].title">Placeholder</strong>
+        Voornaam: <strong x-text="responsedata.first_name">Placeholder</strong>
+        Achternaam: <strong x-text="responsedata.last_name">Placeholder</strong>
+        Emailadres: <strong x-text="responsedata.email">Placeholder</strong>
+        <br>
+        Spelernummer: <strong x-text="responsedata.number">Placeholder</strong>
+        Geboortedatum: <strong x-text="responsedata.birth_date">Placeholder</strong>
+    </div>
+
+    <hr>
+
+    <h3>Post-request: Speler aanmaken (nog niet volledig gefixt)</h3>
+
+    <div x-data="{
+        responsedata: null,
+        posttitle: null,
+        async callmethod1() {
+            this.responsedata = await (await fetch('http://127.0.0.1:8000/player', 
+            {
+                method: 'POST',
+                body: JSON.stringify({
+                    first_name: 'first_name',
+                    
+                    
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })).json();
+
+            console.log(this.responsedata);
+        },
+    }">
+        <input type="text" x-model="posttitle">
+        <button x-on:click="callmethod1">Call POST method</button>
+
+        <p>Voornaam: <strong x-text="responsedata.first_name"></strong></p>
+
     </div>
 
 </body>
