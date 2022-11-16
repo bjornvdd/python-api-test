@@ -50,4 +50,4 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 <p><a href="https://github.com/bjornvdd/bjornvdd.github.io">Link naar front-end Github repository</a></p>
 <p><a href="https://bjornvdd.github.io">Link naar <strong>hosted</strong> front-end</a></p>
 
-<a href="#readme-back-top">Back to top</a>
+<p text-align="right"><a href="#readme-back-top">Back to top</a></p>
