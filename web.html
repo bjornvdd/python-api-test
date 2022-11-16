@@ -18,12 +18,14 @@
         }
     }">
         <button x-on:click="getData">Send get request</button>
-        Team naam: <strong x-text="responsedata[0].team_name">Placeholder</strong>
-        Kapitein: <strong x-text="responsedata[0].captain_team">Placeholder</strong>
-        Gespeelde wedstrijden: <strong x-text="responsedata[0].played_games">Placeholder</strong>
-        Ranking: <strong x-text="responsedata[0].ranking">Placeholder</strong>
+        <dl>
+        <dt>Team naam:</dt> <dd><strong x-text="responsedata[0].team_name">Placeholder</strong></dd>
+        <dt>Kapitein:</dt><dd><strong x-text="responsedata[0].captain_team">Placeholder</strong></dd>
+        <dt>Gespeelde wedstrijden:</dt><dd><strong x-text="responsedata[0].played_games">Placeholder</strong></dd>
+        <dt>Ranking:</dt><dd><strong x-text="responsedata[0].ranking">Placeholder</strong></dd>
+        </dl>
     </div>
-    <br>
+    
 
     <hr>
 
@@ -35,12 +37,13 @@
         }
     }">
         <button x-on:click="getData">Send get request</button>
-        Voornaam: <strong x-text="responsedata.first_name">Placeholder</strong>
-        Achternaam: <strong x-text="responsedata.last_name">Placeholder</strong>
-        Emailadres: <strong x-text="responsedata.email">Placeholder</strong>
-        <br>
-        Spelernummer: <strong x-text="responsedata.number">Placeholder</strong>
-        Geboortedatum: <strong x-text="responsedata.birth_date">Placeholder</strong>
+        <dl>
+        <dt>Voornaam:</dt><dd><strong x-text="responsedata.first_name">Placeholder</strong></dd>
+        <dt>Achternaam: </dt><dd><strong x-text="responsedata.last_name">Placeholder</strong></dd>
+        <dt>Emailadres:</dt> <dd><strong x-text="responsedata.email">Placeholder</strong></dd>
+        <dt>Spelernummer:</dt><dd> <strong x-text="responsedata.number">Placeholder</strong></dd>
+        <dt>Geboortedatum: </dt><dd><strong x-text="responsedata.birth_date">Placeholder</strong></dd>
+        </dl>
     </div>
 
     <hr>
