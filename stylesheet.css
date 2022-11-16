@@ -8,17 +8,13 @@ body {
     background-color: rgb(167, 161, 161);
     margin:auto;
     border: 5px solid black;
-    
-    
-
 }
 
 html {
     background-image: url(https://images.pexels.com/photos/1657332/pexels-photo-1657332.jpeg?cs=srgb&dl=pexels-mart%C3%AD-pardo-1657332.jpg&fm=jpg&_gl=1*3qu5d8*_ga*ODg1MTE4MTgzLjE2Njg0NjYxNTc.*_ga_8JE65Q40S6*MTY2ODQ2NjE1Ny4xLjEuMTY2ODQ2Njc5NC4wLjAuMA..);
     background-attachment: fixed;
     background-position: 0%;
-    background-size: 50%;
-    
+    background-size: 50%;   
 }
 
 div {
@@ -30,8 +26,7 @@ h3 {
 }
 
 p {
-   margin-left: 8px;
-   
+   margin-left: 8px;  
 }
 
 dd {
