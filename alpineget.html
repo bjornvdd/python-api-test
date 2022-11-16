@@ -1,0 +1,82 @@
+<html>
+<head>
+    <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Voetbal API: Bjorn Van den Dungen</h1>
+    <p>Dit is mijn front-end pagina voor het vak API development. Hier laat ik mijn verschillende GET/POST requests dynamisch zien.
+    Zoals jullie kunnen zien heb ik een API gemaakt rond het onderwerp "voetbal".</p>
+
+    <hr>
+
+    <h3>Get-request: Teams</h3>
+    <div x-data="{
+        responsedata: null,
+        async getData() {
+            this.responsedata = await (await fetch('http://127.0.0.1:8000/teams')).json();
+        }
+    }">
+        <button x-on:click="getData">Send get request</button>
+        <dl>
+        <dt>Team naam:</dt> <dd><strong x-text="responsedata[0].team_name">Placeholder</strong></dd>
+        <dt>Kapitein:</dt><dd><strong x-text="responsedata[0].captain_team">Placeholder</strong></dd>
+        <dt>Gespeelde wedstrijden:</dt><dd><strong x-text="responsedata[0].played_games">Placeholder</strong></dd>
+        <dt>Ranking:</dt><dd><strong x-text="responsedata[0].ranking">Placeholder</strong></dd>
+        </dl>
+    </div>
+    
+
+    <hr>
+
+    <h3>Get-request: Speler</h3>
+    <div x-data="{
+        responsedata: null,
+        async getData() {
+            this.responsedata = await (await fetch('http://127.0.0.1:8000/player/Cristiano')).json();
+        }
+    }">
+        <button x-on:click="getData">Send get request</button>
+        <dl>
+        <dt>Voornaam:</dt><dd><strong x-text="responsedata.first_name">Placeholder</strong></dd>
+        <dt>Achternaam: </dt><dd><strong x-text="responsedata.last_name">Placeholder</strong></dd>
+        <dt>Emailadres:</dt> <dd><strong x-text="responsedata.email">Placeholder</strong></dd>
+        <dt>Spelernummer:</dt><dd> <strong x-text="responsedata.number">Placeholder</strong></dd>
+        <dt>Geboortedatum: </dt><dd><strong x-text="responsedata.birth_date">Placeholder</strong></dd>
+        </dl>
+    </div>
+
+    <hr>
+
+    <h3>Post-request: Speler aanmaken (nog niet volledig gefixt)</h3>
+
+    <div x-data="{
+        responsedata: null,
+        posttitle: null,
+        first_name: null,
+        async callmethod1() {
+            this.responsedata = await (await fetch('https://jsonplaceholder.typicode.com/posts', 
+            {
+                method: 'POST',
+                body: JSON.stringify({
+                    title: this.first_name,
+                    body: 'Cristiano',  
+                    userId: 1,
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            })).json();
+
+            console.log(this.responsedata);
+        },
+    }">
+        <input type="text" x-model="posttitle">
+        <button x-on:click="callmethod1">Call method</button>
+
+        <p>Data inserted with id: <strong x-text="responsedata.id"></strong></p>
+        <p>Title that was inserted: <strong x-text="responsedata.title"></strong></p>
+
+    </div>
+</body>
+</html>
