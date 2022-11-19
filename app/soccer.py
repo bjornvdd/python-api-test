@@ -81,7 +81,7 @@ team_list = [team_real_madrid, team_manchester_united]
 player_list = [first_player, second_player, third_player]
 
 
-@app.post("/player", response_model=Player)
+@app.post("/make/player", response_model=Player)
 async def create_player(player: Player):
     return player
 
