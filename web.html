@@ -52,31 +52,62 @@
 
     <div x-data="{
         responsedata: null,
-        posttitle: null,
         first_name: null,
-        async callmethod1() {
-            this.responsedata = await (await fetch('https://jsonplaceholder.typicode.com/posts', 
+        last_name: null,
+        email: null,
+        number: null,
+        birth_date: null,
+        async soccerPlayer() {
+            this.responsedata = await (await fetch('http://127.0.0.1/player', 
             {
                 method: 'POST',
                 body: JSON.stringify({
-                    title: this.first_name,
-                    body: 'Cristiano',  
-                    userId: 1,
+                    first_name: this.first_name,
+                    last_name: this.last_name,
+                    email: this.email,
+                    number: this.number,
+                    birth_date: this.birth_date
                 }),
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
                 },
             })).json();
 
-            console.log(this.responsedata);
+           
         },
-    }">
-        <input type="text" x-model="posttitle">
-        <button x-on:click="callmethod1">Call method</button>
+    }x-init=soccerPlayer">
+    <div>
+        <label>Voornaam:</label>
+        <input type="text" x-model="first_name"/>
+    </div>
+    <div>
+        <label>Achternaam:</label>
+        <input type="text" x-model="last_name"/>
+    </div>
+    <div>
+        <label>Emailadres: </label>
+        <input type="text" x-model="email"/>
+    </div>
+    <div>
+        <label>Nummer: </label>
+        <input type="text" x-model="number"/>
+    </div>
+    <div>
+        <label>Geboortedatum: </label>
+        <input type="text" x-model="birth_date"/>
+    </div>
+        
+        <button x-on:click="soccerPlayer">Call method</button>
 
-        <p>Data inserted with id: <strong x-text="responsedata.id"></strong></p>
-        <p>Title that was inserted: <strong x-text="responsedata.title"></strong></p>
+
+        <p>Voornaam <strong x-text="responsedata.first_name"></strong></p>
+        <p>Achternaam<strong x-text="responsedata.last_name"></strong></p>
+        <p>Email <strong x-text="responsedata.email"></strong></p>
+        <p>Nummer<strong x-text="responsedata.number"></strong></p>
+        <p>Geboortedatum<strong x-text="responsedata.birth_date"></strong></p>
 
     </div>
+
+  
 </body>
 </html>
