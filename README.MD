@@ -12,7 +12,7 @@
 ## Over de front-end:
 
 Ik heb ook een front-end pagina erbij gerealiseerd. Ik heb 2 GET-requests en 1 POST-request kunnen maken. De gegeven link vind je onderaan. 
-<img src="images/front-end.PNG" alt = "POST" width="100%" height="100%">
+<img src="images/front-end.png" alt = "POST" width="100%" height="100%">
 ## Over de API:
 Mijn API doet 1 POST-request en 2 GET-requests.
 
