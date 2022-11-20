@@ -1,6 +1,6 @@
 <a name="readme-back-top"></a>
 
-# Soccer API
+# Voetbal API (Premier League)
 #### Gemaakt door Bjorn Van den Dungen
 #### r0889357
 
@@ -23,7 +23,7 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 
 ### GET-requests:
 
-* Bij de 1ste GET-request kan je alle teams **opvragen**.
+* Bij de 1ste GET-request kan je alle teams **opvragen** waarvan ze staan in het klassement (1e,2e,3e plaats...).
 * Bij de 2de GET-request kan je een specifieke speler opvragen en daarbij komende **informatie** verkrijgen.
 
 
@@ -32,11 +32,26 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 * POST-request:
 <img src="images/Post_Request.PNG" alt = "POST" width="100%" height="100%">
 
-* GET-request 1:
-<img src="images/1_Get_Request.PNG" alt = "GET1" width="100%" height="100%">
+### GET-request TEAMS: Top 3 ranking (klassement):
 
-* GET-request 2:
-<img src="images/2_Get_Request.PNG" alt = "GET2" width="100%" height="100%">
+* GET-request --> 1ste plaats klassement:
+<img src="images/1_Get_Request_1.PNG" alt = "GET1" width="100%" height="100%">
+
+* GET-request --> 2de plaats klassement:
+<img src="images/2_Get_Request_2.PNG" alt = "GET2" width="100%" height="100%">
+
+* GET-request --> 3de plaats klassement:
+<img src="images/3_Get_Request_3.PNG" alt = "GET2" width="100%" height="100%">
+
+### GET-request PLAYERS: Een specifieke speler opvragen:
+
+* GET-request --> Cristiano Ronaldo:
+<img src="images/Get_Request_Cristiano.PNG" alt = "GET1_1" width="100%" height="100%">
+
+
+* GET-request --> Kevin De Bruyne:
+<img src="images/Get_Request_Kevin.PNG" alt = "GET2_2" width="100%" height="100%">
+
 
 ### OpenAPI (docs)
 
