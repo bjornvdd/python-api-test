@@ -6,13 +6,13 @@
 
 
 ## Over het thema:
- Ik heb een API gerealiseerd over het onderwerp voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt.
+ Ik heb een API gerealiseerd over het onderwerp voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt. Alle spelers/teams zijn gebaseerd op de "Premier League"
 
 
 ## Over de front-end:
 
-Hier komt de uitleg van de front-end
-
+Ik heb ook een front-end pagina erbij gerealiseerd. Ik heb 2 GET-requests en 1 POST-request kunnen maken. De gegeven link vind je onderaan. 
+<img src="images/front-end.PNG" alt = "POST" width="100%" height="100%">
 ## Over de API:
 Mijn API doet 1 POST-request en 2 GET-requests.
 
@@ -61,7 +61,7 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 
 * GET-request Team: OpenAPI test
 
-<img src="images/OPEN_API_TEAM.PNG" alt = "docs" width="100%" height="100%">
+<img src="images/OPEN_API_TEAMS.PNG" alt = "docs" width="100%" height="100%">
 
 * GET-request Player: OpenAPI test
 
