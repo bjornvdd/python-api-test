@@ -113,9 +113,9 @@ async def create_player(player: Player):
 @app.get("/teams/{ranking_position}", response_model=Team)
 async def get_teams(ranking_position: int):
     for team in team_list:
-        if team.get("ranking") == ranking_position: #je krijgt de team terug als je de ranking meegeeft, waar ze staan in het klassement (bv. 1,2,3e plaats)
+        if team.get("ranking") == ranking_position: #een team opvragen op basis waarvan ze staan in het klassement (bv. 1e,2e,3e plaats)
             return team
-    return "Team niet in de ranking"
+   
 
 
 @app.get("/player/{player_name}", response_model=Player)
