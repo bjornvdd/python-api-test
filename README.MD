@@ -55,9 +55,17 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 
 ### OpenAPI (docs)
 
-<img src="images/OpenAPI_docs.PNG" alt = "docs" width="100%" height="100%">
+* POST-request: OpenAPI test
 
+<img src="images/OPEN_API_POST.PNG" alt = "docs" width="100%" height="100%">
 
+* GET-request Team: OpenAPI test
+
+<img src="images/OPEN_API_TEAM.PNG" alt = "docs" width="100%" height="100%">
+
+* GET-request Player: OpenAPI test
+
+<img src="images/OPEN_API_PLAYER.PNG" alt = "docs" width="100%" height="100%">
 
 ### Handige links (API)
 
