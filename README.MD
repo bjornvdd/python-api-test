@@ -11,8 +11,11 @@
 
 ## Over de front-end:
 
-Ik heb ook een front-end pagina erbij gerealiseerd. Ik heb 2 GET-requests en 1 POST-request kunnen maken. De gegeven link vind je onderaan. 
+Ik heb ook een front-end pagina erbij gerealiseerd. Ik heb 2 GET-requests en 1 POST-request kunnen programmeren.
+<p>Front-end pagina: <a href="https://bjornvdd.github.io">Link naar <strong>hosted</strong> front-end</a></p>
+
 <img src="images/front-end.png" alt = "POST" width="100%" height="100%">
+
 ## Over de API:
 Mijn API doet 1 POST-request en 2 GET-requests.
 
