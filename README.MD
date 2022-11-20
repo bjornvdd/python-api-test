@@ -75,6 +75,4 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 
 <img src="images/OPEN_API_PLAYER.PNG" alt = "docs" width="100%" height="100%">
 
-
-
 <p align="right"><a href="#readme-back-top">Back to top</a></p>
