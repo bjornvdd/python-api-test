@@ -4,6 +4,11 @@
 #### Gemaakt door Bjorn Van den Dungen
 #### r0889357
 
+### Handige links bij project (API)
+
+<p><a href="https://soccer-service-bjornvdd.cloud.okteto.net">Link naar hosted API</a></p>
+<p><a href="https://github.com/bjornvdd/bjornvdd.github.io">Link naar front-end Github repository</a></p>
+<p><a href="https://bjornvdd.github.io">Link naar <strong>hosted</strong> front-end</a></p>
 
 ## Over het thema:
  Ik heb een API gerealiseerd over het onderwerp voetbal. Al van jongs af aan was ik geïnteresseerd in voetbal. Ik heb ook tot mijn 18de inter-provincaal gespeeld bij Pelt. Alle spelers/teams zijn gebaseerd op de "Premier League"
@@ -70,10 +75,6 @@ Mijn API doet 1 POST-request en 2 GET-requests.
 
 <img src="images/OPEN_API_PLAYER.PNG" alt = "docs" width="100%" height="100%">
 
-### Handige links (API)
 
-<p><a href="https://soccer-service-bjornvdd.cloud.okteto.net">Link naar hosted API</a></p>
-<p><a href="https://github.com/bjornvdd/bjornvdd.github.io">Link naar front-end Github repository</a></p>
-<p><a href="https://bjornvdd.github.io">Link naar <strong>hosted</strong> front-end</a></p>
 
 <p align="right"><a href="#readme-back-top">Back to top</a></p>
